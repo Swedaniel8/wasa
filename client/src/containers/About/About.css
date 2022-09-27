@@ -1,0 +1,121 @@
+.container__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0rem 10%;
+    background-image: url('../../assets/about4bg.webp');
+    background-attachment: fixed;
+
+}
+
+.about__title {
+    margin: 4rem 0 0rem 0rem;
+    width: 450px;
+    /*
+    margin-bottom: 5rem;
+    margin-top: 4rem;        
+    margin-left: 2rem;        
+    */
+}
+.about__title h1{
+    font-size: 45px;
+    margin: 0;
+}
+.about__title #react-icon {
+    color: #4b4a4a;    
+    
+    background-color: rgba(226, 226, 226, 0);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin:0rem 0.6rem 0.6rem 0;
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    
+}
+.about__item {
+   
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    height: 100vh; width: 100vw;
+    gap:11rem;
+   
+    
+}
+
+.about__item__img {
+
+}
+.about__item__img img{
+
+    border: 10px solid white;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+    height: 350px;
+
+    object-fit: contain;   
+}
+
+.about__item__text {
+    width: 480px;
+}
+.about__item__text h1{
+    
+}
+.about__item__text p{
+    
+}
+
+@media screen and (max-width: 1024px) {    
+    .about__item__img {
+        transform: translateX(0);
+        opacity: 1;
+        visibility:visible;
+    }
+    .about__item {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about__title {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 730px) {
+    .about__item__img img{
+        height: 200px;
+    }
+    .about__item__text {
+        width: 300px;
+    }
+    .about__title h1{
+        font-size: 20px;
+        width: 250px;
+        text-align: center;
+     
+    }
+}
+@media screen and (max-width: 730px) {
+    .about__item__img img{
+        height: 150px;
+    }
+    .about__item__text {
+        width: 250px;
+    }
+    .about__title h1{
+        font-size: 20px;
+        width: 250px;
+        text-align: center;
+     
+    }
+}
