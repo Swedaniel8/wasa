@@ -1,0 +1,110 @@
+.component__navbar-full {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+
+    background-color: rgba(63, 63, 63, 0.322);
+    color: white;
+
+    width: 50px; height: 100vh;
+    top: 0; left: 0;
+    z-index: 6;
+    
+}
+.navbar__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+}
+.navbar__btns button{
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    opacity: 0;
+    transform: translateX(-500px);
+    
+}
+.navbar__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__info p{
+    font-weight: 500;
+    width: 170px;
+    opacity: 0;
+    transform: translateX(-500px);
+}
+
+
+
+/* mobile menu*/
+.component__navbar-small {
+    display: none;
+}
+.component__navbar-small__icon #react-icon{
+    position: fixed;
+    top: 20px; right: 20px;
+
+    color: rgb(41, 41, 41);
+    height: 40px; width: 40px;
+    z-index: 2;
+
+}
+.component__navbar-small__menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+
+    z-index: 1;
+    transition: opacity 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    
+}
+.component__navbar-small__menu button{
+    cursor: pointer;
+    font-size: 45px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {    
+    .component__navbar-full {
+        display: none;
+    }
+    .component__navbar-small {
+        display: flex;
+    }
+     
+}
+@media screen and (max-width: 730px) {
+   
+   
+    
+}
+
+@media screen and (max-width: 300px) {
+   
+}
