@@ -29,8 +29,9 @@
 
 .wasa-img1 {
     background-image:  url('../../assets/wasa1.webp');
-    width: calc(2 * (100vw / 5));
+    width: calc(3 * (100vw / 5));
     order: 1;
+    
     
    
     
@@ -112,8 +113,8 @@
         
     }
     .wasa-img1 {
-        width: 100%;
-        cursor: none;
+        
+        cursor:auto;
     }
     .wasa-img-opacity {
         display: none;
@@ -126,7 +127,22 @@
     
 }
 
-@media screen and (max-width: 300px) {
-   
+@media screen and (max-width: 450px) {
+    .header__image-text h2 ,
+    .header__image-text h1 {
+        font-size: 20px;
+    }
+    .header__image-text #react-icon {
+        height:30px; width: 30px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .header__image-text h2 ,
+    .header__image-text h1 {
+        font-size: 15px;
+    }
+    .header__image-text #react-icon {
+        height:25px; width: 25px;
+    }
 }
 

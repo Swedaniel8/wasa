@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useLayoutEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import CSSRulePlugin from 'gsap/CSSRulePlugin'
@@ -17,12 +17,13 @@ const Products = () => {
     const ref = useRef(null)
     const vh = (Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0))*3 // Multiply by number of items
 
-    useEffect(()=> {
+    useLayoutEffect(()=> {
         gsap.registerPlugin(ScrollTrigger);
         gsap.registerPlugin(CSSRulePlugin);
-        ScrollTrigger.matchMedia({
+
+        let mm = ScrollTrigger.matchMedia({
             "(min-width: 1024px)": function() {
-        let prTl = gsap.timeline({scrollTrigger: { scrub:1,start:320,end:vh-150}})
+        let prTl = gsap.timeline({scrollTrigger: { scrub:0.3,start:320,end:vh-150}})
         prTl
         .fromTo(beforeDiv,
             {
@@ -32,13 +33,13 @@ const Products = () => {
             cssRule:{x:290},                
         },0)
             
-
+        
 
         let tl = gsap.timeline({scrollTrigger: {
             trigger:"#item2",
             toggleActions: 'play none none reverse',
             start: 'center 75%',
-            scrub:1, 
+            
             //markers:true
         }})        
         tl            
@@ -56,7 +57,7 @@ const Products = () => {
             trigger:"#item3",
             toggleActions: 'play none none reverse',
             start: 'center 75%',
-            scrub:1, 
+            
             //markers:true
         }})        
         tl2
@@ -69,6 +70,9 @@ const Products = () => {
                                                
             },0)        
         }})
+        return ()=>{
+            mm.kill()        
+          }
     },[])
 
     

@@ -9,15 +9,18 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0rem 10%;
-    background-image: url('../../assets/about4bg.webp');
+    background-position: 0rem 0;
+    /*background-image: url('../../assets/about4bg.webp');*/
+    background-image: url('../../assets/about10bg.webp');    
     background-attachment: fixed;
+
+    color: white;
 
 }
 
 .about__title {
     margin: 4rem 0 0rem 0rem;
-    width: 450px;
+
     /*
     margin-bottom: 5rem;
     margin-top: 4rem;        
@@ -42,12 +45,12 @@
     
 }
 .about__item {
-   
+    
     display: flex;    
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100vh; width: 100vw;
-    gap:11rem;
+    
    
     
 }
@@ -57,7 +60,7 @@
 }
 .about__item__img img{
 
-    border: 10px solid white;
+    border: 10px solid rgb(168, 168, 168);
     border-radius: 0.5rem;
     box-shadow: 1px 1px 5px 1px #CCCCCC;
     height: 350px;
@@ -66,32 +69,40 @@
 }
 
 .about__item__text {
-    width: 480px;
+    width: 460px;
 }
 .about__item__text h1{
     
 }
 .about__item__text p{
-    
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1024px) {    
-    .about__item__img {
+    .container__about {
+        background-position: 50% 0;
+    }
+    /*.about__item__img {
         transform: translateX(0);
         opacity: 1;
         visibility:visible;
-    }
+    }*/
     .about__item {
         flex-direction: column;
-        gap: 2rem;
+        
     }
     .about__title {
+        width: 450px;
         margin-top: 2rem;
         display: flex;
         justify-content: center;
     }
 }
 @media screen and (max-width: 730px) {
+    .about__item {
+        justify-content: center;
+        
+    }
     .about__item__img img{
         height: 200px;
     }
@@ -105,10 +116,13 @@
      
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 360px) {
     .about__item__img img{
-        height: 150px;
+        height: 150px;        
+        
+        border-width: 5px;
     }
+    
     .about__item__text {
         width: 250px;
     }

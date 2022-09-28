@@ -27,7 +27,7 @@ const ContactForm = () => {
     
   return (
     <div className='component__contactForm'>
-        <h1>Contact Ous!</h1>        
+        <h1>Contact Us!</h1>        
         <form>
         <div className='contact__section-input-name'>
             <div>                  
