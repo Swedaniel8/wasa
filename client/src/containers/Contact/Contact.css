@@ -20,7 +20,7 @@
     background-size: cover;    
     background-repeat: no-repeat;
     z-index: -1;
-    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 30% 100%);
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 40% 100%);
     
 }
 
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     
-    width: 500px;
+    width: 480px;
 }
 .contact__info h1{
     display: flex;
@@ -64,15 +64,23 @@
 }
 
 
-
+@media screen and (max-width: 1380px) {
+    .contact__info{
+        width: 450px;
+    }
+    }
 @media screen and (max-width: 1024px) {    
     .container__contact {                    
         height: 100%;
+        
     }
     .container__contact {                    
         flex-direction: column;
         
         padding-bottom: 1rem;
+    }
+    .contact-bg {
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
     }
     .contact__info{        
         margin-bottom: 2rem;
