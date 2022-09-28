@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/wasa/static/css/main.39fe51a0.css",
+    "main.js": "/wasa/static/js/main.21401580.js",
+    "static/media/about1.webp": "/wasa/static/media/about1.2f0c0258f9579f151996.webp",
+    "static/media/projects1bg.webp": "/wasa/static/media/projects1bg.73a19bef6f62ae20ba68.webp",
+    "static/media/wasa4.webp": "/wasa/static/media/wasa4.0fdb7055260dcb0fad87.webp",
+    "static/media/wasa5.webp": "/wasa/static/media/wasa5.3b8b026fa84b2021f541.webp",
+    "static/media/about7bg.webp": "/wasa/static/media/about7bg.f247992aa4ec27bfff12.webp",
+    "static/media/amp1.png": "/wasa/static/media/amp1.dc9820aa90d5c0fd8941.png",
+    "static/media/about2.webp": "/wasa/static/media/about2.d8a5367854283296fbdd.webp",
+    "static/media/partners4.png": "/wasa/static/media/partners4.792bfb749c22c38ea8ab.png",
+    "static/media/about3.webp": "/wasa/static/media/about3.7183caf5512bb389a4f0.webp",
+    "static/media/partners2.png": "/wasa/static/media/partners2.3cf36f943b2b7d737de3.png",
+    "static/media/wasa1.webp": "/wasa/static/media/wasa1.5c6ab0e87e2ad4231ce6.webp",
+    "static/media/wasaProductsBg1.webp": "/wasa/static/media/wasaProductsBg1.c848238b9db963fcf10c.webp",
+    "static/media/partners1.png": "/wasa/static/media/partners1.e32e5be1b5455841ddf7.png",
+    "static/media/amp2.png": "/wasa/static/media/amp2.7fd2acd2e9873bf3881e.png",
+    "static/media/wasa2.webp": "/wasa/static/media/wasa2.41e8e1c809c44bc5cd6a.webp",
+    "static/media/wasa3.webp": "/wasa/static/media/wasa3.cd78451dc3c3d7937e31.webp",
+    "static/media/amp3.png": "/wasa/static/media/amp3.e391d8c248265f182d1e.png",
+    "static/media/about10bg.webp": "/wasa/static/media/about10bg.750e75991d5b71cddf65.webp",
+    "static/media/about4bg.webp": "/wasa/static/media/about4bg.8b5e16f8cb50edf6483c.webp",
+    "static/media/partners3.png": "/wasa/static/media/partners3.69a96388f34bebfdb670.png",
+    "index.html": "/wasa/index.html",
+    "main.39fe51a0.css.map": "/wasa/static/css/main.39fe51a0.css.map",
+    "main.21401580.js.map": "/wasa/static/js/main.21401580.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39fe51a0.css",
+    "static/js/main.21401580.js"
+  ]
+}
