@@ -8,7 +8,8 @@
     color: white;
     
     
-    background-image: url('../../assets/wasa4.webp');
+    /*background-image: url('../../assets/wasa4.webp');*/
+    background-image: url('../../assets/projects1bg.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +39,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    width: 500px;
+    width: 450px;
 }
 .partners__projects-text h2{
     font-size: 30px;
@@ -90,9 +91,7 @@
     margin-bottom: 2rem;
     
 }
-.partners__card__info h1 {
 
-}
 .partners__card__info p {
     font-weight: 900;
 }
@@ -150,11 +149,9 @@
     .partners__card__info {
         width: 320px;
     }
-    .partners__card__info p {
-        
-    }
+    
     .partners__card {
-        height: 100%;
+       
     }
     .partners__card__logos img {        
         height: 70px;
@@ -163,7 +160,7 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     .partners__projects-text {        
         width: 220px;
     }

@@ -49,6 +49,7 @@
 /* mobile menu*/
 .component__navbar-small {
     display: none;
+    
 }
 .component__navbar-small__icon #react-icon{
     position: fixed;
@@ -57,6 +58,7 @@
     color: rgb(41, 41, 41);
     height: 40px; width: 40px;
     z-index: 2;
+    cursor: pointer;
 
 }
 .component__navbar-small__menu {

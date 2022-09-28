@@ -5,7 +5,7 @@ import { TbCrown } from 'react-icons/tb'
 import { ContactForm } from  '../../components/index'
 import './Contact.css'
 const Contact = () => {
-  
+  window.scrollTo(0, 0);
 
   
 
@@ -20,7 +20,7 @@ const Contact = () => {
         <h3><VscPassFilled id="react-icon" />Job Application</h3>
         <p><span>- </span>If you are looking for a new career opportuinity, dont hesitate to apply at Wasa Millimeter Wave.</p>
         <h3><VscPassFilled id="react-icon" />Any Other Questions?</h3>
-        <p><span>- </span>Do you have anyother questions about the company or our products, please write to ous. We are happy to answear all your questions.</p>
+        <p><span>- </span>Do you have anyother questions about the company or our products, please write to us. We are happy to answear all your questions.</p>
       </div>
       <div className='contact__form'>
         <ContactForm />
