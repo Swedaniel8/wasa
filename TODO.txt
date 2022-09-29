@@ -1,2 +1,2 @@
-1. ändra @media 
+1. mobil version ändra ABOUT så bilder är först i column
 
